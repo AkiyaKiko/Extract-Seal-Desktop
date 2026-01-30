@@ -32,9 +32,9 @@ jobs:
 
       - name: Build EXE (onefile)
         run: |
-          pyinstaller --noconfirm --clean --windowed --onefile ^
-            --name ExtractSealWin ^
-            --collect-all cv2 ^
+          pyinstaller --noconfirm --clean --windowed --onefile `
+            --name ExtractSealWin `
+            --collect-all cv2 `
             app_tk.py
 
       - name: Upload artifact (always)
